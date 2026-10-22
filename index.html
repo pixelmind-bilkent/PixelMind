@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelMind – CS491/492 Senior Design Project</title>
+<style>
+  :root { --fg:#1f2328; --muted:#59636e; --accent:#3b6fd8; --bg:#ffffff; --card:#f6f8fa; --line:#d0d7de; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6edf3; --muted:#9198a1; --accent:#6ea0ff; --bg:#0d1117; --card:#161b22; --line:#30363d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 2.4rem; margin: 0; letter-spacing: -0.02em; }
+  .pron { color: var(--muted); margin: 4px 0 20px; }
+  .tag { color: var(--muted); font-size: 0.95rem; }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  a { color: var(--accent); }
+  ul { padding-left: 20px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PixelMind</h1>
+  <p class="pron">Pronounced <b>PIK-sul-mynd</b> (/ˈpɪksəl maɪnd/)</p>
+  <p class="tag">Low-cost autonomous game testing with hierarchical AI agents<br>
+  Bilkent University · CS491/492 Senior Design Project · 2026–2027</p>
+
+  <h2>About the Project</h2>
+  <p>Mobile game studios still rely heavily on manual QA because automated options fall short: random-tap tools do not
+  understand the game and get stuck, while AI agents that send every frame to large multimodal models are too expensive
+  to run at scale. PixelMind is an autonomous agent that tests 2D mobile games like a human tester, at a fraction of that
+  cost. Lightweight local vision models turn each screen into a structured description of buttons, text and game state;
+  a small decision layer handles routine actions, and a large language model is called only when the agent gets stuck.
+  PixelMind explores games on its own, reports freezes, soft-locks and rendering glitches with steps to reproduce, and
+  will be benchmarked on bug-detection rate and cost per test hour against existing approaches.</p>
+
+  <h2>Team</h2>
+  <table>
+    <tr><th>Name</th><th>Student ID</th></tr>
+    <tr><td>Deniz Çağlar</td><td>22201738</td></tr>
+    <tr><td>Eda Eylül Aslan</td><td>22202639</td></tr>
+    <tr><td>Engin Ermiş</td><td>22203167</td></tr>
+    <tr><td>Erenalp Yuca</td><td>22201745</td></tr>
+    <tr><td>Kerem Varnalı</td><td>22202788</td></tr>
+  </table>
+
+  <h2>Supervisor &amp; Innovation Expert</h2>
+  <table>
+    <tr><th>Role</th><th>Name</th></tr>
+    <tr><td>Supervisor</td><td>Selim Aksoy</td></tr>
+    <tr><td>Innovation Expert</td><td>Enis Kerem Çakmak</td></tr>
+  </table>
+
+  <h2>Reports</h2>
+  <div class="card">
+    <ul>
+      <li>Project Specification Report – <i>coming soon</i></li>
+      <li>Analysis and Requirements Report – <i>coming soon</i></li>
+      <li>Detailed Design Report – <i>coming soon</i></li>
+    </ul>
+  </div>
+
+  <h2>Repositories</h2>
+  <div class="card">
+    <ul>
+      <li>Source code – <i>link coming soon</i></li>
+    </ul>
+  </div>
+
+  <footer>Department of Computer Engineering, Bilkent University</footer>
+</main>
+</body>
+</html>
